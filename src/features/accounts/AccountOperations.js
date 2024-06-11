@@ -19,6 +19,7 @@ function AccountOperations() {
 
   function handleDeposit() {
     depositAmount > 0 && dispatch(deposit(depositAmount, currency));
+
     setDepositAmount("");
   }
 

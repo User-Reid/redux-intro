@@ -116,16 +116,3 @@ function createCustomer(fullName, nationalID) {
 function updateName(fullName) {
   return { type: "account/updateName", payload: fullName };
 }
-
-store.dispatch(deposit(500));
-store.dispatch(withdraw(200));
-store.dispatch(requestLoan(5090, "To spend on gambling"));
-store.dispatch(payLoan());
-
-console.log(store.getState());
-
-store.dispatch(createCustomer("Reid Herrera", "55543"));
-console.log(store.getState());
-store.dispatch(deposit(9000));
-store.dispatch(updateName("Reid Parkes"));
-console.log(store.getState());
